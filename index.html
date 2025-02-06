@@ -3,35 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avin-S Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 { animation: fadeIn 2s ease-in-out; }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Avin! Welcome to my portfolio website where I showcase my work, skills, and interests.</p>
+<body class="bg-gray-900 text-white">
+
+    <!-- Hero Section -->
+    <section class="text-center p-20 bg-gray-800">
+        <h1 id="hero-text" class="text-5xl font-bold"></h1>
+        <p class="text-gray-400 text-lg mt-3">Aerospace & Mechanical Engineer | Researcher | FGL Leader</p>
+        <a href="#projects" class="mt-5 inline-block px-6 py-3 bg-purple-600 hover:bg-purple-500 transition duration-300 text-white rounded-lg">View Projects</a>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my projects. Stay tuned for updates!</p>
+
+    <!-- About Me -->
+    <section class="p-10 text-center">
+        <h2 class="text-3xl font-semibold text-purple-400">About Me</h2>
+        <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
+            I'm an International Aerospace & Mechanical Engineering student at Tohoku University, specializing in synchrotron radiation research, quantum computing, and AI-driven simulations. Passionate about interdisciplinary science, leadership, and innovation.
+        </p>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/avin-s" target="_blank">My GitHub</a></p>
+
+    <!-- Achievements -->
+    <section id="achievements" class="p-10 bg-gray-800 text-center">
+        <h2 class="text-3xl font-semibold text-purple-400">Achievements</h2>
+        <ul class="mt-4 text-gray-300 max-w-2xl mx-auto text-left">
+            <li>🏆 **President Fellowship Scholar** at Tohoku University</li>
+            <li>🥈 **BIOMOD 2024** - 2nd place overall, 3rd place in website</li>
+            <li>🎤 **Presented at Yashiro Lab Preprint & Seminar I & II**</li>
+            <li>📜 **NICT Internship** - Hindi-Japanese translation & transliteration</li>
+            <li>⚛️ **Quantum Computing Research** - Studied barren plateaus under Bin Ho</li>
+            <li>🛰️ **Superconducting Coil Magnet Project** - Built a coil for nuclear reactor learning</li>
+            <li>🏅 **JLPT N3, IELTS 7.5, EJU Certified, GPA 2.4/4**</li>
+        </ul>
     </section>
-    <footer>
-        <p>&copy; 2025 Avin-S. All Rights Reserved.</p>
-    </footer>
+
+    <!-- Leadership Roles -->
+    <section id="leadership" class="p-10 text-center">
+        <h2 class="text-3xl font-semibold text-purple-400">Leadership & Community</h2>
+        <ul class="mt-4 text-gray-300 max-w-2xl mx-auto text-left">
+            <li>🌍 **President, TUFSA (Tohoku Foreign Students Association)** - 2025</li>
+            <li>👨‍🔬 **Leader, TUSTEM (Tohoku University STEM Community)** - Since 2022</li>
+            <li>📝 **FGL Community Leader** - Organizing events, newsletters, and merchandise</li>
+            <li>📢 **FGL Ambassador** - Promoting Tohoku University to Indian schools</li>
+            <li>🎭 **TUIF Management Team 2023** - Organized international cultural festival</li>
+            <li>💻 **Help Desk GLC Management Team** - Automating workflow & trip planning</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="p-10 bg-gray-800 text-center">
+        <h2 class="text-3xl font-semibold text-purple-400">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="p-5 bg-gray-700 rounded shadow">
+                <h3 class="text-xl font-bold text-white">🔬 Synchrotron Radiation Research</h3>
+                <p class="text-gray-300">Using NanoTerasu for articulating new imaging techniques.</p>
+            </div>
+            <div class="p-5 bg-gray-700 rounded shadow">
+                <h3 class="text-xl font-bold text-white">🤖 Quantum Computing Research</h3>
+                <p class="text-gray-300">Studying barren plateaus under Prof. Bin Ho.</p>
+            </div>
+            <div class="p-5 bg-gray-700 rounded shadow">
+                <h3 class="text-xl font-bold text-white">🕹️ VR Game Development</h3>
+                <p class="text-gray-300">Created a text-to-3D Unity project for better visualization of textbooks.</p>
+            </div>
+            <div class="p-5 bg-gray-700 rounded shadow">
+                <h3 class="text-xl font-bold text-white">🔍 ASA Digital Internship</h3>
+                <p class="text-gray-300">Debugging websites and automating quality testing processes.</p>
+            </div>
+            <div class="p-5 bg-gray-700 rounded shadow">
+                <h3 class="text-xl font-bold text-white">🚀 Hult Prize Startup</h3>
+                <p class="text-gray-300">Developed Swantistiiic, an innovative prototype for social impact.</p>
+            </div>
+            <div class="p-5 bg-gray-700 rounded shadow">
+                <h3 class="text-xl font-bold text-white">🍺 GBD x Tohoku Beer Project</h3>
+                <p class="text-gray-300">Designed a label & helped sell a commemorative beer for Tohoku University.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="p-10 bg-gray-900 text-center">
+        <h2 class="text-3xl font-semibold text-purple-400">Contact Me</h2>
+        <p class="mt-4 text-gray-300">Let's connect! Reach out via GitHub, LinkedIn, or email.</p>
+        <div class="mt-4">
+            <a href="https://github.com/yourusername" class="text-blue-400 hover:underline">GitHub</a> |
+            <a href="https://linkedin.com/in/yourprofile" class="text-blue-400 hover:underline">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Typing Effect -->
+    <script>
+        const text = "Hello, I'm [Your Name]";
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                document.getElementById("hero-text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, 100);
+            }
+        }
+        window.onload = type;
+    </script>
+
 </body>
 </html>
